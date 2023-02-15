@@ -5,6 +5,103 @@
   padding: 0px;
   box-sizing: inherit; }
 
+html {
+  font-size: 30%; }
+  @media (min-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 56.25em) {
+    html {
+      font-size: 56.25%; } }
+  @media (min-width: 75em) {
+    html {
+      font-size: 62.5%; } }
+  @media (min-width: 75em) {
+    html {
+      font-size: 75%; } }
+
 body {
-  background-color: #1e1e1e;
-  color: #fff; }
+  box-sizing: border-box;
+  padding: 0rem; }
+  @media (min-width: 56.25em) {
+    body {
+      padding: 3rem; } }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+  color: #777; }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem; }
+  .heading-primary--main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 400; }
+    @media (min-width: 37.5em) {
+      .heading-primary--main {
+        letter-spacing: 1.2rem; } }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+  @media (min-width: 37.5em) {
+    .u-margin-bottom-medium {
+      margin-bottom: 3rem !important; } }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+  @media (min-width: 37.5em) {
+    .u-margin-bottom-big {
+      margin-bottom: 5rem !important; } }
+
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
+.u-margin-top-huge {
+  margin-top: 10rem !important; }
+
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all .2s;
+  position: relative;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer; }
+
+.btn--white {
+  background-color: #fff;
+  color: #777; }
+  .btn--white::after {
+    background-color: white; }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(173, 216, 230, 0.8), rgba(0, 0, 139, 0.8)), url("https://i.imgur.com/wyZFo4n.png");
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  .header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }

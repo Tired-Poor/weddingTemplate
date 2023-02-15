@@ -2,9 +2,15 @@ import React from 'react'
 
 import "./style.css"
 
+import Header from "./Header"
+
 export const App = (props) => {
   return (
-    <div>Welcome to the Fuckery</div>
+    <div>
+
+      <Header />
+      
+    </div>
   )
 }
 
